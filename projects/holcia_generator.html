@@ -1,0 +1,34 @@
+<body>
+  <p jakisAtrybut="sdfasdfasdfasd">Ada Borowa</p>
+
+  <button onclick="addImage()">dodaj holcie</button>
+  <img
+    src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/183213761_379280169998908_2820444328365819353_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=aee45a&_nc_ohc=A2iN-FXMIOQAX_xz2y9&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=7&oh=c5cb882cc43b83c4a7742dc206579e9c&oe=60BD854B"
+  />
+</body>
+
+<script>
+  /* 
+    1. wstawic jakikolwiek obrazek na strone 
+    2. wstawic buttona na strone
+    3. sprawic zeby klikniecie w button cos robilo (console.log)
+    4. napisac funkcje i przetestowac ja (console.log)
+    5. dodac element na strone
+        5a. stworzyc element (img)
+        5b. dodac na strone (DOM)
+        5c. dodac atrybut (src tak jak w naszym pierwszym tagu <img src="...">)
+    6.sprawic zeby klikajac w buttona wywolywala sie funkcja
+  */
+
+  console.log("Ja dzialam od razu!");
+
+  function addImage() {
+    let image = document.createElement("img");
+    image.innerHTML = "haloooo";
+    document.body.appendChild(image);
+    image.setAttribute(
+      "src",
+      "https://scontent.xx.fbcdn.net/v/t1.15752-0/p403x403/183198457_3962336233882935_2683042462843437094_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=aee45a&_nc_ohc=D6Ms8MrDgdsAX-RFLps&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=6&oh=48068a6c1dbf281e96e6a36bf7b987eb&oe=60BC3B62"
+    );
+  }
+</script>
