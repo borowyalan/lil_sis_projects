@@ -1,0 +1,53 @@
+<body>
+  <p jakisAtrybut="sdfasdfasdfasd">Ada Borowa</p>
+
+  <button onclick="addImage()">dodaj holcie</button>
+  <img id="mainImage"
+    src="https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/183213761_379280169998908_2820444328365819353_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=aee45a&_nc_ohc=A2iN-FXMIOQAX_xz2y9&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=7&oh=c5cb882cc43b83c4a7742dc206579e9c&oe=60BD854B" width="650"
+  />
+  <div id="colorfulDiv" style="color:red">jestem kolorowy</div>
+  <div> another div </div>
+</body>
+
+<script>
+  /* 
+    1. wstawic jakikolwiek obrazek na strone 
+    2. wstawic buttona na strone
+    3. sprawic zeby klikniecie w button cos robilo (console.log)
+    4. napisac funkcje i przetestowac ja (console.log)
+    5. dodac element na strone
+        5a. stworzyc element (img)
+        5b. dodac na strone (DOM)
+        5c. dodac atrybut (src tak jak w naszym pierwszym tagu <img src="...">)
+    6.sprawic zeby klikajac w buttona wywolywala sie funkcja
+    7. zeby po kliknieciu dodaj holcie zmienialo sie zdjecie psa
+    8. zeby po kliknieciu dodaj holcie drugi raz zmienialo sie zdjecie psa znowu na te pierwsze
+  */
+  
+	let imgChanged = false;
+  console.log(imgChanged);
+
+  function addImage() {
+    let mainImage = document.getElementById("mainImage")
+    let mojaZmienna = "ada";
+    mojaZmienna = "Alan";
+    mojaZmienna = 3;
+    
+    if(imgChanged) {
+      mainImage.setAttribute("src", "https://scontent.xx.fbcdn.net/v/t1.15752-0/s403x403/183213761_379280169998908_2820444328365819353_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=aee45a&_nc_ohc=A2iN-FXMIOQAX_xz2y9&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&tp=7&oh=c5cb882cc43b83c4a7742dc206579e9c&oe=60BD854B")
+      imgChanged = false;
+    	console.log("if true")
+    } else {
+      mainImage.setAttribute("src", "https://z-p3-scontent-frt3-1.xx.fbcdn.net/v/t1.15752-9/183863383_2623154661142058_5468931181381262599_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=ae9488&_nc_ohc=H7VZBzVMS1gAX9Vs7ZT&_nc_ht=z-p3-scontent-frt3-1.xx&oh=0c3bf8ecd2b1f0eaacfc998cfb2fe0a2&oe=60C0C055")
+      imgChanged = true;
+    	console.log("if false")
+    }
+    
+    let colorfulDiv = document.getElementById("colorfulDiv");
+    colorfulDiv.setAttribute("style", "color:green")
+    
+    
+    
+    console.log(imgChanged)
+  }
+</script>
