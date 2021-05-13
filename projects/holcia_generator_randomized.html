@@ -1,0 +1,47 @@
+<body>
+  <button style="display: block" onclick="randomImage()">Dodaj Holcie</button>
+  <img id="mainImage" src="" />
+</body>
+
+<script>
+  /* 
+		https://bit.ly/3eGjRSv
+
+		https://bit.ly/3y7jgRw
+
+		https://bit.ly/2Qe6FL5
+  
+  */
+
+  //nazwa    //wartosc
+  let variable = "Adka";
+  // console.log(variable);
+  // console.log("Jestem stringiem");
+
+  let linkOne = "dlugiLink1";
+  let linkTwo = "dlugiLink2";
+  let linkThree = "dlugiLink3";
+
+  let names = ["Alan", "Ada", "Holly", "Azija"];
+
+  let links = [
+    "https://bit.ly/3eGjRSv",
+    "https://bit.ly/3y7jgRw",
+    "https://bit.ly/2Qe6FL5",
+  ];
+
+  let prevNumber = "";
+  let mainImage = document.getElementById("mainImage");
+
+  function randomImage() {
+    console.log("prevNumber:" + prevNumber);
+    let randomNumber = Math.floor(Math.random() * 3);
+    if (randomNumber == prevNumber) {
+      randomNumber = Math.floor(Math.random() * 3);
+    }
+    console.log("randomNumber:" + randomNumber);
+
+    mainImage.setAttribute("src", links[randomNumber]);
+    prevNumber = randomNumber;
+  }
+</script>
