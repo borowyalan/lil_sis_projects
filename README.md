@@ -5,4 +5,4 @@ Collection of my sister's exercises/little projects that we are coding together.
 
 1. [🔗 Holcia_generator](https://ada.borowyalan.com/projects/holcia_generator.html) - basic `tags`, simple `DOM` manipulation, declaring and calling `functions`
 2. [🔗 Holcia_generator_v2](https://ada.borowyalan.com/projects/holcia_generator_v2.html) - conditional statement `if else`, getting elements from `DOM`, notion of a `flag` as a `state` and changing it, more playing with `variables`
-3. [🔗 Holcia_generator_randomized](https://ada.borowyalan.com/projects/holcia_generator_randmized.html) - conditional statements, `Math.random()`, `Array`s
+3. [🔗 Holcia_generator_randomized](https://ada.borowyalan.com/projects/holcia_generator_randomized.html) - conditional statements, `Math.random()`, `Array`s
